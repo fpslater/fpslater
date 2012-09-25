@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Live Nation</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <script src="vendors/js/jquery-min.js"></script>
+  <script src="vendors/js/underscore-min.js"></script>
+  <script src="vendors/js/backbone-min.js"></script>
+
+
+  <script src="js/livenation.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/models.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/jst.js"></script>
+
+
+
+  <script type="text/javascript">
+      $(document).ready(function() {
+        $(Livenation.init);
+      });
+  </script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div class="header">
+      <h1><span>Live</span>Nation</h1>
+    </div>
+    <div id="event-list">
+      <ul></ul>
+    </div>
+    <div id="search-panel"></div>
+
+  </div>
+</body>
+</html>
