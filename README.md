@@ -1,8 +1,8 @@
-**
-Forrest Notes:
+**Forrest Notes:**
 
 Tomorrow I'll be adding support for the 3 different endpoints, hopefully wrap up this assignment. Stay tuned.  
-**
+
+***
 
 
 
