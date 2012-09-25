@@ -1,3 +1,15 @@
+NOTE: This is still a work in progress. Imcomplete. 
+
+
+
+
+
+
+
+
+
+
+
 Front end developer test for Live Nation Labs.
 ==============================================
 
