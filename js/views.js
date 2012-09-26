@@ -30,7 +30,6 @@ Livenation.Views.EventItem = Backbone.View.extend({
   className: 'event',
 
   initialize: function () {
-
     this.thumbURL = this.options.val.headliner_thumb;
     this.displayName = this.options.val.display_name;
     this.venueName = this.options.val.venue.name;
@@ -47,7 +46,6 @@ Livenation.Views.EventItem = Backbone.View.extend({
       areaName: this.areaName,
       date: this.date
     }));
-
 
     return this;
   },

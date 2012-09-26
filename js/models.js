@@ -11,12 +11,6 @@ Livenation.Models.Data = Backbone.Model.extend({
   fetchEvents: function (pageNumber, callback, errorCallback) {
     var _url = 'http://lnl-p.com/api/v1/events/?page='+pageNumber;
 
-    // $.ajax({url: _url, type: 'GET', dataType: 'json'})
-    //   .done(function(obj, xhr){
-    //     callback(obj);
-    //   }).fail(function(){
-    //     errorCallback();
-    //   });
 
     var params = [];
 
@@ -30,20 +24,9 @@ Livenation.Models.Data = Backbone.Model.extend({
         callback(obj);
       },
       error: function(xhr, textStatus){
-        alert("cat")
+        errorCallback();
       }
     });
-
-
-    // $.getJSON(_url,
-    //         function(data){
-    //           $.each(data.items, function(i,item){
-    //             // $("<img/>").attr("src", item.media.m).appendTo("#images");
-    //             // if ( i == 3 ) return false;
-    //             alert("DOG");
-    //           });
-    //         });
-
 
   },
 

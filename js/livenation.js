@@ -34,14 +34,7 @@ var Livenation = {
         list = $('#event-list ul'),
         self = this;
 
-
-
-
-
-    //
     $.each(data, function(key, val) {
-
-
       var eventItemView = new Livenation.Views.EventItem({
         key: key,
         val: val
@@ -49,20 +42,11 @@ var Livenation = {
 
       list.append(eventItemView.render().el);
 
-
     });
-
-
-
-
-    //
-    // list.append(eventItemView.rendor().el);
-
-  // });
 
   },
 
-  onConfigError: function (obj) {
+  onConfigError: function () {
     alert("config error");
   }
 
