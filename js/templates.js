@@ -15,8 +15,15 @@ window.JST['eventItem'] = _.template(
 );
 
 
-
-// displayName: this.displayName,
-// venueName: this.venueName,
-// areaName: this.areaName,
-// date: this.date
+window.JST['expandedEventItem'] = _.template(
+    "<div class='darkbox'>\
+      <div class='lightbox'>\
+        <img src='<%= imageURL %>'/>\
+        <div><%= displayName %></div>\
+        <div><%= headlinerName %></div>\
+        <div><%= venueName %></div>\
+        <div><%= startTime %></div>\
+        <a href='eventURL'>Check it out!</div>\
+      </div>\
+    </div>"
+);

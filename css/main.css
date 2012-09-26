@@ -40,6 +40,7 @@ li.event {
   height: 60px;
   background-color: white;
   margin-bottom: 6px;
+  cursor: pointer;
 }
 
 li.event:hover {
@@ -74,5 +75,45 @@ li.event > img {
 
 .area-name {
   font-size: 11px;
+}
+
+.expanded-event, .darkbox{
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.darkbox{
+  background-color: rgba(0,0,0,.85);
+}
+
+.lightbox{
+  position: relative;
+  margin: 150px auto;
+  height: 300px;
+  width: 600px;
+  background-color: white;
+  border: 5px solid #EFEFEF;
+}
+
+.lightbox > img {
+  height: 280px;
+  padding: 10px;
+  float: left;
+}
+
+.lightbox > div {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.lightbox > a {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
 

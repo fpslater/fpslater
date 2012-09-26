@@ -30,6 +30,7 @@ var Livenation = {
 
 
   buildEventList: function (obj) {
+
     var data = obj,
         list = $('#event-list ul'),
         self = this;
