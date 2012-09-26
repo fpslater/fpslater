@@ -1,0 +1,3 @@
+Livenation.Utils = {
+
+}

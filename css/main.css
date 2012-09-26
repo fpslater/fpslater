@@ -1,0 +1,77 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0px;
+}
+
+.header {
+  height: 35px;
+  width: 100%;
+  margin-top: 20px;
+  //visibility: hidden;
+}
+
+.header > h1 {
+  margin: auto 30px;
+  font-size: 32px;
+  font-weight: bold;
+  float: left;
+}
+
+.header > h1 > span {
+  color: #B6021D;
+}
+
+#search-panel {
+  margin: 20px 0 0 30px;
+  float: left;
+}
+
+#event-list {
+  margin: 20px 0 0 30px;
+  padding-left: 2px;
+  float: left;
+  min-height: 100px;
+  background-color: #EFEFEF;
+  padding: 5px;
+}
+
+li.event {
+  width: 650px;
+  height: 60px;
+  background-color: white;
+  margin-bottom: 6px;
+}
+
+li.event:hover {
+  background-color: #EFEFEF;
+}
+
+li.event > div {
+  float: left;
+  font-size: 14px;
+  padding:  5px;
+  line-height: 16px;
+}
+
+li.event > img {
+  float: left;
+  height: 50px;
+  padding:  5px;
+}
+
+.display-name {
+  font-weight: bold;
+  width:  240px;
+}
+
+.location {
+  width: 230px;
+}
+
+.date {
+  width: 85px;
+}
+
+.area-name {
+  font-size: 11px;
+}
