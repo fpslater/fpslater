@@ -9,50 +9,22 @@ var Livenation = {
 
   init: function(options) {
 
+    Livenation.searchView = new Livenation.Views.Search();
 
-    var searchView = new Livenation.Views.Search({
-        // collection: Demo.items,
-    });
+    Livenation.paginatedCollection = new Livenation.Collections.PaginatedCollection();
 
-    var data = new Livenation.Models.Data();
-
-    data.fetchEvents(
-      "1",
-      function(obj) { Livenation.buildEventList(obj); },
-      function() { Livenation.onConfigError(); }
-    );
-
-    searchView.render();
+    Livenation.viewPage("index");
 
     Livenation.router = new Livenation.Router();
     Backbone.history.start();
   },
 
 
-  buildEventList: function (obj) {
-
-    var data = obj,
-        list = $('#event-list ul'),
-        self = this;
-
-    $.each(data, function(key, val) {
-      var eventItemView = new Livenation.Views.EventItem({
-        key: key,
-        val: val
-      });
-
-      list.append(eventItemView.render().el);
-
-    });
-
-  },
-
-  onConfigError: function () {
-    alert("config error");
+  viewPage: function (type, term) {
+    $('.loading-img').removeClass('hide');
+    this.paginatedCollection.fetch(
+        type,
+        term
+    );
   }
-
-
-
-  // MAX_WHATEVER: 6
-
 };

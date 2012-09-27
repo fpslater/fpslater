@@ -1,7 +1,8 @@
 window.JST = {};
 
 window.JST['search'] = _.template(
-    "<input class='search-input' type='text' autocomplete='off' spellcheck='false' dir='ltr' placeholder='Search Events'/>"
+    "<input class='search-input' type='text' autocomplete='off' spellcheck='false' dir='ltr' placeholder='search events...'/>\
+    <div class='index-button'>Index</div>"
 );
 
 window.JST['eventItem'] = _.template(
@@ -16,14 +17,32 @@ window.JST['eventItem'] = _.template(
 
 
 window.JST['expandedEventItem'] = _.template(
-    "<div class='darkbox'>\
+    "<div class='darkbox' style='height: <%= blackboxHeight %>px'>\
       <div class='lightbox'>\
         <img src='<%= imageURL %>'/>\
         <div><%= displayName %></div>\
         <div><%= headlinerName %></div>\
         <div><%= venueName %></div>\
         <div><%= startTime %></div>\
-        <a href='eventURL'>Check it out!</div>\
       </div>\
     </div>"
+);
+
+
+window.JST['paginated_view'] = _.template(
+  "<div class='selectors'>\
+    <% if(prev) { %>\
+      <a href='#' class='prev'>previous</a>\
+    <% } else { %>\
+      <span>previous</span>\
+    <% } %>\
+    <% if(next) { %>\
+      <a href='#' class='next'>next</a>\
+    <% } else { %>\
+      <span>next</span>\
+    <% } %>\
+  </div>\
+  <div class='page-num'>\
+    <%= page %></span>\
+  </div>"
 );

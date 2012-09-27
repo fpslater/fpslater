@@ -7,7 +7,6 @@ body {
   height: 35px;
   width: 100%;
   margin-top: 20px;
-  //visibility: hidden;
 }
 
 .header > h1 {
@@ -22,8 +21,27 @@ body {
 }
 
 #search-panel {
-  margin: 20px 0 0 30px;
+  margin: 20px 0 0 10px;
   float: left;
+}
+
+#search-panel > div > input {
+  height: 15px;
+  width: 145px;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.index-button {
+  padding: 3px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.index-button:hover {
+  text-decoration: underline;
 }
 
 #event-list {
@@ -33,6 +51,7 @@ body {
   min-height: 100px;
   background-color: #EFEFEF;
   padding: 5px;
+  min-width: 660px;
 }
 
 li.event {
@@ -56,6 +75,7 @@ li.event > div {
 
 li.event > img {
   float: left;
+  width: 50px;
   height: 50px;
   padding:  5px;
 }
@@ -79,7 +99,6 @@ li.event > img {
 
 .expanded-event, .darkbox{
   display: block;
-  height: 100%;
   left: 0;
   position: absolute;
   top: 0;
@@ -92,7 +111,11 @@ li.event > img {
 
 .lightbox{
   position: relative;
-  margin: 150px auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -300px;
   height: 300px;
   width: 600px;
   background-color: white;
@@ -115,5 +138,21 @@ li.event > img {
   margin: 10px;
   font-size: 16px;
   font-weight: bold;
+}
+
+.pagination {
+  height: 15px;
+}
+
+.selectors {
+  float: right;
+}
+
+.page-num {
+  float: left;
+}
+
+.hide {
+  visibility: hidden;
 }
 

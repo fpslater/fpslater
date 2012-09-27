@@ -1,3 +1,22 @@
+** Forrest Notes **
+
+1) You search for new items by typing in the input box and pressing enter. 
+
+2) The Index button will give you the index.
+
+3) The top left of the list gives you the page number (the right side has pagination buttons)
+
+4) You can expand an event by clicking where on it, and you can go back to normal view by clicking anywhere on the screen.
+
+
+Performance Hindrance--
+
+  I wasn't able to pull up all the list items at once, because I didn't have a parameter for that. 
+  Therefore, I had to re-query the list for each pagination. 
+
+
+------------------------------------------------------------------------------------------------
+
 Front end developer test for Live Nation Labs.
 ==============================================
 
